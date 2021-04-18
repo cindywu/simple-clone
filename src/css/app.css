@@ -1,0 +1,63 @@
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #2D2D2D;
+  color: #ffffff;
+}
+
+.amount {
+  color: #ef3f3a;
+}
+
+.transaction-goal {
+  color: #b3b6ba;
+}
+
+a {
+  color: #b3b6ba;
+  text-decoration: none;
+}
+
+.masthead {
+  background-color: #1B1B1B;
+}
+
+.transactions-section-header {
+  background-color: #1B1B1B;
+}
+
+.layout-body {
+  width: 66.66%;
+}
+
+.notification-list {
+  background-color: #383838;
+}
+
+.activity-navigation {
+  padding: 1em;
+  border-bottom: 1px solid white;
+}
+
+.activity-header-navigation-tab {
+  padding: 1em;
+  border-bottom: 2px solid #0d97ff;
+}
+
+.activity-header-options {
+  padding: 1em;
+}
+
+.alert p {
+  border-left: 2px solid #ffba00;
+}
+
+.transaction-section-title {
+  padding: .5em;
+}

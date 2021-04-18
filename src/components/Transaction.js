@@ -1,4 +1,5 @@
 import React from 'react'
+import dateFormat from 'dateformat'
 
 export default function Transaction(props) {
   const {
@@ -18,7 +19,7 @@ export default function Transaction(props) {
     <li>
       <header className="transactions-section-header -bordered">
         <div className="transaction-section-title">
-          <h3 className="subheading -small">{times.when_recorded_local}</h3>
+          <h3 className="subheading -small">{dateFormat(times.when_recorded_local, "dddd, mmm d")}</h3>
         </div>
       </header>
       <ul className="transactions-list">

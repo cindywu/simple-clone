@@ -1,5 +1,8 @@
 import React from 'react'
 import TransactionList from './TransactionList'
+import NotificationList from './NotificationList'
+import Footer from './Footer'
+import '../css/app.css'
 
 function App() {
   return (
@@ -7,11 +10,30 @@ function App() {
       <div className="layout-header">
         <div className="masthead">Masthead</div>
       </div>
-      <div className="layout-body">
-        <TransactionList 
-          transactions ={sampleTransactions}
-        />
-      </div>
+      <section className="layout-body">
+        <div className="layout-main-wrapper">
+          <div className="layout-main activity">
+            <div className="transactions-section offset-content">
+              <NotificationList />
+            </div>
+            <div className="activity-navigation">
+              <div className="subheading">
+                <a className="activity-header-navigation-tab">
+                  Transactions
+                </a>
+              </div>
+            </div>
+            <div className="activity-header-options">
+              Activity
+            </div>
+          </div>
+          
+          <TransactionList 
+            transactions ={sampleTransactions}
+          />
+        </div>
+        <Footer />
+      </section>
     </div>
   )
 }
