@@ -1,3 +1,9 @@
+@import-normalize;
+
+*, *::before, *::after {
+  font-family: Calibre-R, sans-serif;
+}
+
 ul {
   list-style: none;
 }
